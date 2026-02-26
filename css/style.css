@@ -1,0 +1,203 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTE GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6;
+    color: #4b2e2e;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #3e2723, #6d4c41);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* NAV */
+.nav {
+    background-color: #5d4037;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    margin: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ffd54f;
+}
+
+/* SECCIONES */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* MENÚ */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #6d4c41;
+}
+
+/* BOTÓN */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #6d4c41, #a1887f);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+/* IMAGEN */
+.imagen-section {
+    background-color: #fffaf3;
+}
+
+.imagen-container {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.imagen-container img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+.imagen-container img:hover {
+    transform: scale(1.05);
+}
+
+.imagen-container figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6d4c41;
+}
+
+/* VIDEO */
+.video-section {
+    background-color: #f5f0e6;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* -------------------- */
+/* RESPONSIVE */
+/* -------------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .menu-container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .header {
+        padding: 40px 15px;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+}
+
+/* --------------------------- */
+/* FUENTE LOCAL - fuente.lasorra */
+/* --------------------------- */
+@font-face {
+    font-family: 'LaSorra';
+    src: url('../fonts/fuente.lasorra') format('truetype'); /* Ajusta la extensión si es .otf o .woff */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* EJEMPLO DE USO */
+body {
+    font-family: 'LaSorra', Arial, sans-serif;
+}

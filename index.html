@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma</title>
+
+    <link rel="icon" href="./assets/icon/cafesito.lasorra.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Café Aroma ☕</h1>
+    <p>El mejor café para comenzar tu día</p>
+</header>
+
+<nav class="nav">
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="inicio" class="section">
+    <article>
+        <h2>Bienvenido</h2>
+        <p>Disfruta del mejor café artesanal preparado con granos seleccionados.</p>
+        <button onclick="mensaje()">Ordena Ahora</button>
+    </article>
+</section>
+
+<section id="menu" class="section">
+    <h2>Nuestro Menú</h2>
+
+    <div class="menu-container">
+
+        <article class="card">
+            <h3>Espresso</h3>
+            <p>Café fuerte y concentrado.</p>
+            <span>$2.00</span>
+        </article>
+
+        <article class="card">
+            <h3>Cappuccino</h3>
+            <p>Con leche espumosa y cacao.</p>
+            <span>$3.50</span>
+        </article>
+
+        <article class="card">
+            <h3>Pastel de Chocolate</h3>
+            <p>Suave, esponjoso y delicioso.</p>
+            <span>$4.00</span>
+        </article>
+
+    </div>
+</section>
+
+<section id="galeria" class="section imagen-section">
+    <h2>Nuestra Cafetería</h2>
+    <figure class="imagen-container">
+        <img src="./assets/images/cafe.lasorra.jpg" alt="Interior de la cafetería">
+        <figcaption>Un espacio acogedor para disfrutar tu café</figcaption>
+    </figure>
+</section>
+
+<section id="video" class="section video-section">
+    <h2>Conoce Nuestro Ambiente</h2>
+    <div class="video-container">
+        <video controls>
+            <source src="./assets/vidios/video.lasorra.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
+</section>
+
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <address>
+        <p>📍 Calle Principal; americo prespucio #777</p>
+        <p>📞 +54 381 326 6109</p>
+        <p>📧 contacto@cafelazo_rrafacundo.com</p>
+    </address>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Café Aroma - Todos los derechos reservados para la lali</p>
+</footer>
+
+<script>
+function mensaje() {
+    alert("¡Gracias por tu interés! Pronto podrás ordenar en línea.");
+}
+</script>
+
+</body>
+</html>
